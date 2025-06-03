@@ -1,0 +1,88 @@
+#This was our culminating project for my highschool computer engineering class, we developed a rubber-ducky device dupe (a device that executes a payload upon insertion)
+
+
+
+
+#!/usr/bin/env python3 - download python
+"""
+payload_script.py
+
+Reads a simple '.duck' script and types commands
+on /dev/hidg0, making the Pi Zero act like a USB keyboard.
+"""
+
+import sys
+import time
+
+# Basic US scancodes (no SHIFT logic yet for special or caps)
+SCANCODE_MAP = {
+    'a': 0x04, 'b': 0x05, 'c': 0x06, 'd': 0x07, 'e': 0x08,
+    'f': 0x09, 'g': 0x0A, 'h': 0x0B, 'i': 0x0C, 'j': 0x0D,
+    'k': 0x0E, 'l': 0x0F, 'm': 0x10, 'n': 0x11, 'o': 0x12,
+    'p': 0x13, 'q': 0x14, 'r': 0x15, 's': 0x16, 't': 0x17,
+    'u': 0x18, 'v': 0x19, 'w': 0x1A, 'x': 0x1B, 'y': 0x1C,
+    'z': 0x1D, '1': 0x1E, '2': 0x1F, '3': 0x20, '4': 0x21,
+    '5': 0x22, '6': 0x23, '7': 0x24, '8': 0x25, '9': 0x26,
+    '0': 0x27, ' ': 0x2C, '\n': 0x28
+}
+
+MOD_NONE = 0x00
+
+def press_key(scancode, modifier=MOD_NONE):
+    # Press key
+    rpt = bytearray(8)
+    rpt[0] = modifier
+    rpt[2] = scancode
+    with open('/dev/hidg0', 'wb') as f:
+        f.write(rpt)
+    # Release
+    release = bytearray(8)
+    with open('/dev/hidg0', 'wb') as f:
+        f.write(release)
+
+def type_string(txt):
+    for c in txt:
+        code = SCANCODE_MAP.get(c.lower(), 0)
+        if code:
+            press_key(code)
+        time.sleep(0.02)
+
+def run_ducky_script(fname):
+    try:
+        with open(fname, 'r') as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        print(f"File '{fname}' not found.")
+        sys.exit(1)
+
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith('//'):
+            continue
+        parts = line.split(' ', 1)
+        cmd = parts[0].upper()
+
+        if cmd == "STRING" and len(parts) > 1:
+            type_string(parts[1])
+        elif cmd == "ENTER":
+            press_key(0x28)
+        elif cmd == "DELAY" and len(parts) > 1:
+            try:
+                ms = int(parts[1])
+                time.sleep(ms / 1000.0)
+            except ValueError:
+                pass
+        else:
+            print(f"Unknown command: {line}")
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 payload_script.py <payload_file>")
+        sys.exit(1)
+    duck_file = sys.argv[1]
+    print(f"Running script: {duck_file}")
+    run_ducky_script(duck_file)
+    print("Done.")
+
+if __name__ == "__main__":
+    main()
