@@ -1,59 +1,77 @@
+<!-- PROFILE README: Muhib Waqar -->
 
-# Muhib Waqar
+<h1 align="center">Muhib Waqar</h1>
+<p align="center">
+  <b>Data & ML • Cybersecurity • Cloud Security</b><br>
+  Honours Math & Business Administration @ University of Waterloo
+</p>
 
-Welcome to my GitHub profile! I’m a driven student at the University of Waterloo, pursuing an Honours degree in Mathematics and Business Administration, with a strong passion for cybersecurity, AI, and cloud security. My journey in tech is fueled by a love for problem-solving and a desire to create innovative solutions that can make a real-world impact.
-
----
-
-## 🚀 About Me
-
-- **Current Role:** Honours Mathematics & Business Administration student, University of Waterloo  
-- **Passions:**  
-  - Cybersecurity – exploring new ways to safeguard systems and data  
-  - Artificial Intelligence – building AI-powered tools that solve real problems  
-  - Cloud Security – diving into cloud infrastructures to design robust, scalable solutions  
-- **Approach:** I thrive on pushing boundaries, continuously learning, and tackling complex challenges head-on.
+<p align="center">
+  <a href="mailto:muhib.waqar@uwaterloo.ca"><img alt="Email" src="https://img.shields.io/badge/Email-muhib.waqar%40uwaterloo.ca-blue?style=flat-square"></a>
+  <a href="https://www.linkedin.com/in/muhibwaqar/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-muhibwaqar-0A66C2?style=flat-square&logo=linkedin"></a>
+  <img alt="Location" src="https://img.shields.io/badge/Toronto%20%7C%20Waterloo-Canada-2ea44f?style=flat-square">
+</p>
 
 ---
 
-## 💡 Entrepreneurial & Personal Drive
+### ⚡ Summary
+UW student blending **data science & machine learning** with **defensive security and cloud**. I like turning messy, high-pressure problems into clear, automated systems—secure by default, measurable by design. I am resilient, determined, and focused on making an impact. If I don't know how to solve something I will figure it out by researching, asking, & understanding.
 
-- **Entrepreneurial Spirit:**  
-  I’m always brainstorming new business ideas and looking for creative ways to merge technology with business to craft solutions that are both impactful and scalable.  
-- **Self-Improvement:**  
-  I believe in relentless personal growth—whether that’s in the gym, through athletic challenges, or by learning new skills and expanding my knowledge.
-
----
-
-## 🔧 Skills & Interests
-
-- **Technical Skills:**  
-  - Problem-solving in complex environments  
-  - Researching and implementing security best practices  
-  - Exploring AI/ML algorithms and frameworks  
-  - Working with cloud platforms (AWS, Azure, etc.)  
-- **Soft Skills:**  
-  - Adaptability and resilience in fast-paced projects  
-  - Collaboration and networking—valuing the human side of business  
-  - Creative thinking to challenge the status quo  
-- **Personal Interests:**  
-  - Athletic pursuits and gym challenges  
-  - Experimenting with coffee blends (fuel for those long coding sessions!)  
-  - Continuous reading on tech trends and startup strategies
+- **Data/AI:** anomaly detection, predictive analytics, LLM tooling  
+- **Security:** incident response, threat detection, API & web app security, policy/compliance (ISO 27001, SOC 2, NIST)  
+- **Cloud:** AWS & Azure (foundational certs), Zero-Trust mindset, least privilege IAM, logging & monitoring
 
 ---
 
-## 🌱 Growth Mindset
-
-I believe that success is a combination of hard work, dedication, and the ability to adapt. I’m always open to collaborating on innovative projects, sharing insights, and exploring new ventures that push the envelope. Whether it’s a late-night brainstorming session over a fresh cup of coffee or a weekend hackathon, I’m driven by a constant desire to elevate myself and my work.
+### 🏗️ Current Focus
+- Spring 2026 co-op search: **Data/ML** or **Security Engineering**  
+- Building an **Auth Log Anomaly Detector** (Python, scikit-learn, IsolationForest)  
+- Hardening cloud labs (AWS/Azure): **GuardDuty**, **Security Hub**, **Defender for Cloud**, centralized logging
 
 ---
 
-## 📫 Let’s Connect
+### 🧰 Skills Matrix
+**Data & ML:** Pandas, NumPy, scikit-learn, data wrangling, anomaly detection, experimentation, dashboards  
+**Security:** IR playbooks, SIEM-driven triage, vulnerability assessment, Windows hardening, BitLocker/WIP, IAM least privilege, API security  
+**Cloud:** AWS (IAM, S3, CloudWatch/GuardDuty), Azure (AD, Defender for Cloud), basic IaC, cost/security baselines  
+**Programming:** Python, JavaScript/TypeScript, SQL; foundations in Rust/Ruby  
+**Ops & Quality:** Git/GitHub, Docker, CI basics, documentation, metrics
 
-For questions, ideas, or exciting opportunities, feel free to reach out:
+---
 
-- 📧 **Email:** [muhibwaqar@hotmail.com](mailto:muhibwaqar@hotmail.com)  
-- 🌐 **LinkedIn:** [linkedin.com/in/your-linkedin-username](https://www.linkedin.com/in/your-linkedin-username)
+### 🛡️ Certifications
+- **AWS Certified Cloud Practitioner (CCP)**
+- **Microsoft Azure Fundamentals (AZ-900)**
+- **Cisco CCST – Cybersecurity**, **CCNA1 – Introduction to Networks**
+- **Certiport IT Specialist – Python**
+- **Cisco Cybersecurity Essentials**
+- **Zoom Security Champion**
+---
 
-Let’s collaborate and build something incredible together!  
+### 💼 Experience Snapshot
+
+- **Canadian Cyber Inc. – Junior Cybersecurity Analyst (2020–2023)**  
+  - Investigated malware & endpoint incidents; tuned response steps to cut time-to-contain.  
+  - Implemented **BitLocker** and **Windows Information Protection** policies org-wide.  
+  - Drafted policy docs aligned to **ISO 27001/NIST/HIPAA** requirements.
+
+- **Blackstone Foundation Library – Tech & Cybersecurity Support (2024)**  
+  - Led least-privilege IAM cleanup; improved usability + security.  
+  - Ran staff trainings; supported relaunch with stable systems and clear how-tos.
+
+- **Islamic Books & Souvenirs – Web & Systems (2025)**  
+  - Built Shopify theme, digitized inventory, integrated WhatsApp for rapid support; uplifted UX and content operations.
+
+---
+
+### 🤝 Let’s Connect
+- Email: **muhib.waqar@uwaterloo.ca**  
+- LinkedIn: **/in/muhibwaqar**  
+- Open to collaborations in **Data/ML**, **Security engineering**, and **Cloud security**.
+
+<!--
+Tips:
+1) Keep this repo named exactly `muhibwaqar` for auto-profile rendering.
+2) Pin 6 most relevant repos so they appear below this README.
+3) Use GitHub Topics on each repo: `machine-learning`, `anomaly-detection`, `security`, `aws`, `azure`, `shopify`, etc.
+-->
