@@ -25,8 +25,11 @@ UW student blending **data science & machine learning** with **defensive securit
 
 ### 🏗️ Current Focus
 - Spring 2026 co-op search: **Data/ML** or **Security Engineering**  
-- Building an **Auth Log Anomaly Detector** (Python, scikit-learn, IsolationForest)  
-- Hardening cloud labs (AWS/Azure): **GuardDuty**, **Security Hub**, **Defender for Cloud**, centralized logging
+- Working towards getting the Microsoft Certified: Azure Data Scientist Associate
+- Building projects to apply my learnings
+- Wrestling, creating content, working out, and becoming undeniably resilient
+
+
 
 ---
 
