@@ -69,7 +69,7 @@ UW student blending **data science & machine learning** with **defensive securit
 
 ### 🤝 Let’s Connect
 - Email: **muhib.waqar@uwaterloo.ca**  
-- LinkedIn: **/in/muhibwaqar**  
+- LinkedIn: **[linkedin.com/in/muhibwaqar](https://www.linkedin.com/in/muhibwaqar)**  
 - Open to collaborations in **Data/ML**, **Security engineering**, and **Cloud security**.
 
 <!--
